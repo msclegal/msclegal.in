@@ -60,40 +60,34 @@
             
             /* NAV */
             .nav {
-                position:fixed;
-                top:0;
-                width:100%;
-                z-index:1000;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 1000;
 
                 backdrop-filter: blur(14px);
-
-
                 background: rgba(0,0,0,0.85);
 
+                /*  key fix */
                 padding-top: env(safe-area-inset-top);
 
-                transition:0.3s;
+                /* ensures background fills safe area */
+                box-sizing: border-box;
+
+                transition: 0.3s;
             }
             
             .nav.scrolled {
                 background: rgba(0,0,0,0.95);
             }
-            
-            .nav::before {
-                content:"";
-                position:absolute;
-                top:0;
-                left:0;
-                right:0;
-                height:env(safe-area-inset-top);
-                background:#000;
-                z-index:-1;
-            }
-            
+                        
             .nav-inner {
                 max-width:1200px;
                 margin:auto;
-                padding:12px 24px 16px 24px;
+
+                /* reduce top padding since safe area is added */
+                padding:12px 24px 14px;
+
                 display:flex;
                 justify-content:space-between;
                 align-items:center;
