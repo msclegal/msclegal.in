@@ -36,7 +36,8 @@
                 color:#f5f5f5;
             }
             
-            /* 🔥 NOISE OVERLAY */
+            /*  NOISE OVERLAY */
+
             body::before {
                 content:"";
                 position:fixed;
@@ -45,6 +46,17 @@
                 z-index:9999;
                 opacity:0.035;
                 background-image:url("https://grainy-gradients.vercel.app/noise.svg");
+                top:0;
+                left:0;
+                right:0;
+
+                height: env(safe-area-inset-top);
+
+                background:#0a0a0a;
+
+                z-index:999;
+
+
             }
             
             /* PROGRESS BAR */
