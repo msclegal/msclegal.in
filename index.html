@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
     <title>MSC Legal | Top Law Firm in Delhi | Supreme Court & High Court Lawyers India</title>
 
@@ -11,8 +11,7 @@
 
     <meta name="keywords" content="law firm in delhi, lawyers in delhi, supreme court lawyers india, delhi high court lawyers, corporate law firm india, arbitration lawyers india, best law firm delhi">
         
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-        
+            
     <meta name="robots" content="index, follow">
 <link rel="icon" href="rw_common/images/Favicon.png">
 
@@ -26,10 +25,18 @@
             /* RESET */
             * {margin:0;padding:0;box-sizing:border-box;}
             
-            html, body {
+            html {
                 overflow-x:hidden;
+                scroll-behavior: smooth;
+                -webkit-text-size-adjust: 100%;
             }
 
+            body {
+                overflow-x:hidden;
+                font-family:'Inter',sans-serif;
+                background:#0a0a0a;
+                color:#f5f5f5;
+            }
             body {
                 font-family:'Inter',sans-serif;
                 background:#0a0a0a;
@@ -46,17 +53,17 @@
                 z-index:9999;
                 opacity:0.035;
                 background-image:url("https://grainy-gradients.vercel.app/noise.svg");
+            }
+            
+            body::after {
+                content:"";
+                position:fixed;
                 top:0;
                 left:0;
                 right:0;
-
-                height: env(safe-area-inset-top);
-
+                height:env(safe-area-inset-top);
                 background:#0a0a0a;
-
-                z-index:999;
-
-
+                z-index:1001;
             }
             
             /* PROGRESS BAR */
@@ -193,6 +200,10 @@
                 letter-spacing:0.5px;
             }
             
+            h3 {
+                font-size:clamp(12px,5vw,32px);
+            }
+            
             .text {
                 max-width:750px;
             }
@@ -286,8 +297,6 @@
                     margin-left:0;
                     font-size:13px;
                 }
-
-                }
                 
             }
             
@@ -324,7 +333,7 @@
 <nav class="nav">
     <div class="nav-inner">
         <div class="logo">
-            <img src="rw_common/images/Logo.png">
+            <img src="rw_common/images/Logo.png" alt="MSC Legal Delhi Law Firm Logo">
         </div>
         <div class="links">
             <a href="#about">About</a>
@@ -338,14 +347,14 @@
 <section class="hero">
     <h1 style="display:none;">Law Firm in Delhi | Supreme Court & High Court Lawyers India</h1>
     <div class="hero-bg"></div>
-    <img src="rw_common/images/Logo Home.png" id="heroLogo">
+    <img src="rw_common/images/Logo Home.png" alt="MSC Legal Law Firm India" id="heroLogo">
 </section>
 
 <!-- ABOUT -->
 <section class="section" id="about">
 <div class="section-inner">
 <h2>ABOUT US</h2>
-<h1>SINCE 1960!</h1>
+<h3>SINCE 1960!</h3>
 <br>
 <div class="text">
 <p>The foundation of <b>MSC</b> Legal finds its pillars grounded deep in the history of time. The genesis of the firm can be traced back to the year 1960, the year when it first started as an office under the name Manbir Singh & Company. Through years of serving clients with excellent legal services, <b>MSC</b> Legal has evolved into a multi-disciplinary law office offering myriad of legal solutions in a vast variety of legal fields.</p>
@@ -364,7 +373,7 @@
 <div class="section-inner">
 
 <h2>AREAS OF PRACTICE</h2>
-<h1>FULL SERIVCE LAW FIRM</h1>
+<h3>FULL SERVICE LAW FIRM</h3>
 <br>
 <div class="text">
 <p>Through the years, our associates have been exposed to various different fields of law. Having collected wisdom from wounds and wins on the field, we pride at providing sustained, efficient, excellent and reliable legal services in a myriad of legal fields.</p>
@@ -444,7 +453,7 @@
 </div>
 </section>
 
-<div style="position:absolute; left:-9999px; opacity:0;">
+<div style="position:absolute; width:1px; height:1px; overflow:hidden;">
 MSC Legal is a law firm based in New Delhi, India, providing legal services and representation before the Supreme Court of India, Delhi High Court, District Courts of Delhi and NCR, tribunals, commissions and authorities across India. The firm regularly advises clients on corporate law, mergers and acquisitions, banking and finance, arbitration, litigation, insolvency and dispute resolution matters.
 </div>
 
