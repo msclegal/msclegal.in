@@ -794,19 +794,37 @@ footer {
     padding-right: 0;
   }
 
-  .about-left h2,
+  .about-left h2 {
+    text-align: left;
+  }
+
   .about-right p {
-    text-align: justified;
+    text-align: justify;
+    text-justify: inter-word;
+
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .about-right p {
+    font-size: 0.96rem;
+    line-height: 1.9;
+    padding: 0;
   }
 
   .about {
-    gap: 2.5rem;
+    gap: 2rem;
+    width: 100%;
+    align-items: stretch;
   }
 
   .about-left,
   .about-right {
     padding: 0;
     width: 100%;
+    display: block;
   }
 
   .about-left h2 {
@@ -815,6 +833,15 @@ footer {
 
   .stat-grid {
     margin-top: 2rem;
+  }
+
+  .value-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .val-tag {
+    width: 100%;
   }
   .about-divider { display: none; }
   .courts { padding: 3rem 1.5rem; }
