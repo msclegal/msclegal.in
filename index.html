@@ -240,8 +240,19 @@ nav.scrolled {
 .btn-ghost:hover { border-color: var(--gold-dim); color: var(--gold); transform: translateY(-1px); }
 
 .hero-scroll-hint {
-  position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%);
-  display: flex; flex-direction: column; align-items: center; gap: 0.6rem;
+  position: absolute;
+  bottom: 2.5rem;
+
+  left: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+
+  margin: 0 auto;
+
   animation: fadeUp 1s ease 1.2s both;
 }
 .hero-scroll-hint span {
@@ -772,7 +783,25 @@ footer {
   .nav-center { display: none; }
   .hero h1 { font-size: 3rem; }
   .hero-year { display: none; }
-  .about { grid-template-columns: 1fr; padding: 5rem 2rem; }
+  .about {
+    grid-template-columns: 1fr;
+    padding: 5rem 2rem;
+    gap: 2.5rem;
+  }
+
+  .about-left,
+  .about-right {
+    padding: 0;
+    width: 100%;
+  }
+
+  .about-left h2 {
+    margin-bottom: 2rem;
+  }
+
+  .stat-grid {
+    margin-top: 2rem;
+  }
   .about-divider { display: none; }
   .courts { padding: 3rem 1.5rem; }
   .practice { padding: 5rem 2rem; }
