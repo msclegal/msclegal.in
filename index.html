@@ -955,6 +955,101 @@ footer {
   .disclaimer { padding: 2rem; }
   .corner { display: none; }
   .hero-actions { flex-direction: column; }
+
+  /* COURTS & JURISDICTIONS readability */
+  .courts-label {
+    color: #d7bb8c;
+    font-size: 0.68rem;
+    font-weight: 400;
+    letter-spacing: 0.24em;
+    opacity: 0.95;
+  }
+
+  /* Practice area numbers readability */
+  .card-num {
+    color: rgba(215,187,140,0.72);
+    font-size: 1.9rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+
+  .practice-card:hover .card-num {
+    color: #e2c79a;
+  }
+
+
+  /* Restore premium gold tags with better readability */
+  .val-tag {
+    color: #d7bb8c;
+    border-color: rgba(215,187,140,0.35);
+    background: rgba(215,187,140,0.05);
+    font-size: 0.64rem;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    line-height: 1.5;
+  }
+
+  /* Larger and clearer SINCE 1960 */
+  .hero-overline span {
+    font-size: 0.74rem;
+    letter-spacing: 0.26em;
+    color: #d7bb8c;
+    font-weight: 400;
+  }
+
+  .hero-overline::before,
+  .hero-overline::after {
+    width: 52px;
+    background: linear-gradient(to right, transparent, rgba(215,187,140,0.7));
+  }
+
+  .hero-overline::after {
+    background: linear-gradient(to left, transparent, rgba(215,187,140,0.7));
+  }
+
+
+  .contact-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-right {
+    order: 1;
+  }
+
+  .contact-left {
+    order: 2;
+  }
+
+
+  .mobile-section-order {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-section-order .tech-section {
+    order: -1;
+  }
+
+  .mobile-section-order .contact-section,
+  .mobile-section-order .contact-mobile {
+    order: 2;
+  }
+
+
+  .mobile-section-order {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tech-section {
+    order: 1;
+  }
+
+  .contact-section {
+    order: 2;
+  }
+
 }
 </style>
 </head>
